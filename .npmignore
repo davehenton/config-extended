@@ -1,0 +1,6 @@
+.idea/
+coverage/
+src/
+.eslintrc.json
+.prettierrc
+.flowconfig

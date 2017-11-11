@@ -1,0 +1,74 @@
+{
+  "name": "config-extended",
+  "version": "0.0.1",
+  "private": true,
+  "description": "based on feathers-configuration and uses node-config as base",
+  "main": "dist/config.js",
+  "engines": {
+    "node": "8.9.0"
+  },
+  "scripts": {
+    "build": "babel --ignore **__mocks__/*.js,**__tests__/*.js -d ./dist ./src -s",
+    "precommit": "lint-staged",
+    "prepublish": "npm run build",
+    "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}",
+    "test": "jest --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evanion/config-extended.git"
+  },
+  "keywords": [
+    "config"
+  ],
+  "author": "Mikael Pettersson <evanion@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Evanion/config-extended/issues"
+  },
+  "homepage": "https://github.com/Evanion/config-extended#readme",
+  "babel": {
+    "presets": [
+      "es2015",
+      "flow"
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "transform-imports"
+    ]
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "collectCoverage": true
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "peerDependencies": {
+    "config": "^1.26.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-imports": "^1.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.11.0",
+    "eslint-plugin-jest": "^21.3.2",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "lint-staged": "^5.0.0",
+    "prettier": "^1.8.2"
+  },
+  "dependencies": {
+    "config": "^1.28.1"
+  }
+}
