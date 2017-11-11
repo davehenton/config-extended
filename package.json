@@ -1,6 +1,6 @@
 {
-  "name": "@Evanion/config-extended",
-  "version": "0.1.0",
+  "name": "@evanion/config-extended",
+  "version": "0.1.1",
   "description": "based on feathers-configuration and uses node-config as base",
   "main": "dist/config.js",
   "engines": {
