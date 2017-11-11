@@ -66,8 +66,5 @@
     "jest": "^21.2.1",
     "lint-staged": "^5.0.0",
     "prettier": "^1.8.2"
-  },
-  "dependencies": {
-    "config": "^1.28.1"
   }
 }
