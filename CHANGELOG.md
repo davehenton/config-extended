@@ -1,4 +1,7 @@
 # Changelog
 
+## 1.0.1
+* Correct peer dependency version.
+
 ## 1.0.0
-* Updated readme with usage example.
+* Update readme with usage example.

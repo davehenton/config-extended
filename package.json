@@ -50,7 +50,7 @@
     ]
   },
   "peerDependencies": {
-    "config": "^1.26.2"
+    "config": "^1.30.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
