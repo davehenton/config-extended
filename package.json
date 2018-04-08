@@ -4,7 +4,7 @@
   "description": "based on feathers-configuration and uses node-config as base",
   "main": "dist/config.js",
   "engines": {
-    "node": "8.9.0"
+    "node": "8.0.0"
   },
   "scripts": {
     "build": "babel --ignore **__mocks__/*.js,**__tests__/*.js -d ./dist ./src -s",
@@ -65,6 +65,7 @@
     "husky": "^0.14.3",
     "jest": "^21.2.1",
     "lint-staged": "^5.0.0",
-    "prettier": "^1.8.2"
+    "prettier": "^1.8.2",
+    "config": "^1.30.0"
   }
 }
