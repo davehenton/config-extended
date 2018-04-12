@@ -4,7 +4,7 @@
   "description": "based on feathers-configuration and uses node-config as base",
   "main": "dist/config.js",
   "engines": {
-    "node": "8.0.0"
+    "node": ">=8.0.0"
   },
   "scripts": {
     "build": "babel --ignore **__mocks__/*.js,**__tests__/*.js -d ./dist ./src -s",

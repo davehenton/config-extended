@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.2
+* Correct engine limit
+
 ## 1.0.1
 * Correct peer dependency version.
 
