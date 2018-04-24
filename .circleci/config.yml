@@ -33,14 +33,13 @@ jobs:
 
       - run: ./cc-test-reporter before-build
       - run: yarn install
+      # run tests!
+      - run: yarn test
       - run: ./cc-test-reporter after-build --coverage-input-type lcov --exit-code $?
 
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-
-      # run tests!
-      - run: yarn test
 
 
