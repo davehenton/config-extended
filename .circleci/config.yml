@@ -21,11 +21,8 @@ jobs:
     steps:
       - checkout
 
-      - run:
-        name: Setup Code Climate test-reporter
-        command: |
-          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-          chmod +x ./cc-test-reporter
+      - run: curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+      - run: chmod +x ./cc-test-reporter
 
       # Download and cache dependencies
       - restore_cache:
@@ -34,12 +31,9 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run:
-        name: Run tests
-        command: |
-          ./cc-test-reporter before-build
-          yarn install
-          ./cc-test-reporter after-build --exit-code $?
+      - run: ./cc-test-reporter before-build
+      - run: yarn install
+      - run: ./cc-test-reporter after-build --exit-code $?
 
       - save_cache:
           paths:
