@@ -19,11 +19,4 @@ describe('Config', () => {
     delete Config.env[mockConfigObj.envTest];
   });
 
-  it('should remove backslash from the start of a value', () => {
-    Config.cfg.backslash = mockConfigObj.backslash;
-    const value = Config.get('backslash');
-
-    expect.assertions(1);
-    expect(value).toBe(mockConfigObj.backslashValue);
-  });
 });
