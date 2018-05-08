@@ -20,3 +20,4 @@ import Config from '@evanion/config-extended';
 
 const dbHost = Config.get('database'); // > mongo://localhost:27017/example
 ```
+test
