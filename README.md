@@ -13,7 +13,7 @@ config/default.json
   "database": "DB_INFO"
 }
 ```
-
+test
 index.js
 ```
 import Config from '@evanion/config-extended';
