@@ -59,6 +59,173 @@ export default class Config {
 
     return result;
   }
+  static convert(current) {
+    const result = Array.isArray(current) ? [] : {};
+
+    Object.keys(current).forEach(name => {
+      let value = current[name];
+
+      if (typeof value === 'object' && value !== null) {
+        value = this.convert(value);
+      }
+
+      if (typeof value === 'string') {
+        if (value.indexOf('\\') === 0) {
+          value = value.replace('\\', '');
+        } else if (this.env[value]) {
+          value = this.env[value]; // eslint-disable-line prefer-destructuring
+        }
+      }
+
+      result[name] = value;
+    });
+
+    return result;
+  }
+
+  static convert(current) {
+    const result = Array.isArray(current) ? [] : {};
+
+    Object.keys(current).forEach(name => {
+      let value = current[name];
+
+      if (typeof value === 'object' && value !== null) {
+        value = this.convert(value);
+      }
+
+      if (typeof value === 'string') {
+        if (value.indexOf('\\') === 0) {
+          value = value.replace('\\', '');
+        } else if (this.env[value]) {
+          value = this.env[value]; // eslint-disable-line prefer-destructuring
+        }
+      }
+
+      result[name] = value;
+    });
+
+    return result;
+  }
+
+  static convert(current) {
+    const result = Array.isArray(current) ? [] : {};
+
+    Object.keys(current).forEach(name => {
+      let value = current[name];
+
+      if (typeof value === 'object' && value !== null) {
+        value = this.convert(value);
+      }
+
+      if (typeof value === 'string') {
+        if (value.indexOf('\\') === 0) {
+          value = value.replace('\\', '');
+        } else if (this.env[value]) {
+          value = this.env[value]; // eslint-disable-line prefer-destructuring
+        }
+      }
+
+      result[name] = value;
+    });
+
+    return result;
+  }
+
+  static convert(current) {
+    const result = Array.isArray(current) ? [] : {};
+
+    Object.keys(current).forEach(name => {
+      let value = current[name];
+
+      if (typeof value === 'object' && value !== null) {
+        value = this.convert(value);
+      }
+
+      if (typeof value === 'string') {
+        if (value.indexOf('\\') === 0) {
+          value = value.replace('\\', '');
+        } else if (this.env[value]) {
+          value = this.env[value]; // eslint-disable-line prefer-destructuring
+        }
+      }
+
+      result[name] = value;
+    });
+
+    return result;
+  }
+
+  static convert(current) {
+    const result = Array.isArray(current) ? [] : {};
+
+    Object.keys(current).forEach(name => {
+      let value = current[name];
+
+      if (typeof value === 'object' && value !== null) {
+        value = this.convert(value);
+      }
+
+      if (typeof value === 'string') {
+        if (value.indexOf('\\') === 0) {
+          value = value.replace('\\', '');
+        } else if (this.env[value]) {
+          value = this.env[value]; // eslint-disable-line prefer-destructuring
+        }
+      }
+
+      result[name] = value;
+    });
+
+    return result;
+  }
+
+  static convert(current) {
+    const result = Array.isArray(current) ? [] : {};
+
+    Object.keys(current).forEach(name => {
+      let value = current[name];
+
+      if (typeof value === 'object' && value !== null) {
+        value = this.convert(value);
+      }
+
+      if (typeof value === 'string') {
+        if (value.indexOf('\\') === 0) {
+          value = value.replace('\\', '');
+        } else if (this.env[value]) {
+          value = this.env[value]; // eslint-disable-line prefer-destructuring
+        }
+      }
+
+      result[name] = value;
+    });
+
+    return result;
+  }
+
+  static convert(current) {
+    const result = Array.isArray(current) ? [] : {};
+
+    Object.keys(current).forEach(name => {
+      let value = current[name];
+
+      if (typeof value === 'object' && value !== null) {
+        value = this.convert(value);
+      }
+
+      if (typeof value === 'string') {
+        if (value.indexOf('\\') === 0) {
+          value = value.replace('\\', '');
+        } else if (this.env[value]) {
+          value = this.env[value]; // eslint-disable-line prefer-destructuring
+        }
+      }
+
+      result[name] = value;
+    });
+
+    return result;
+  }
 
   /**
    * @name Config.get
